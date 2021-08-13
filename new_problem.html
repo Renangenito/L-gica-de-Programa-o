@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function pulaLinha() {
+
+		document.write("<br>");
+
+	}
+	
+	function mostra(frase) {
+	
+		document.write(frase);
+		pulaLinha();
+	
+	}
+	
+	
+	function uniaoSalario(meuSalario, seuSalario) {
+	
+	var fim = meuSalario + seuSalario;
+	return fim;
+	}
+	
+	var nome = prompt("Qual o nome do moço? ");
+	var s1 = parseInt(prompt("quanto o " + nome + " ganha por mês ? "));
+	var nome2 = prompt("Qual o nome da moça? ");
+	var s2 = parseInt(prompt("quanto a " + nome2 + " ganha por mês ? "));
+	
+	var fim = uniaoSalario(s1, s2);
+	
+	mostra("O tatal da soma dos salários de " + nome + " e " + nome2 + " é:");
+	mostra(fim);
+
+
+
+
+</script>
